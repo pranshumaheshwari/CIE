@@ -48,7 +48,7 @@ a:hover, a:active {
 }
 
 .institute:hover {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .commitee {
@@ -62,6 +62,20 @@ a:hover, a:active {
 .p-0 {
   padding: 1px;
 }
+
+.companies {
+    color: black;
+}
+
+.company-logo {
+    max-height: 25vmin;
+    max-width: 25vmin;
+}
+
+.flex {
+    display: flex;
+}
+
 
 /* ===================================================================
  * # typography & general theme styles
@@ -1419,7 +1433,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 0;
     outline: 0;
     border: none;
-    width: 80px;
+    /* width: 80px; */
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -1630,8 +1644,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: block;
     position: absolute;
     top: 0;
-    left: -70px;
-    width: 70px;
+    left: -100px;
+    /* width: 70px; */
     padding-left: 12px;
 }
 
@@ -1750,19 +1764,21 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content h3 {
     font-family: "montserrat-medium", sans-serif;
-    font-size: 1.6rem;
-    color: rgba(255, 255, 255, 0.5);
+    font-size: 4.4rem;
+    color: rgba(255, 255, 255, 0.75);
     text-transform: uppercase;
     letter-spacing: .3rem;
     position: relative;
     margin-top: 0;
     margin-bottom: 1.2rem;
     margin-left: 6px;
+    text-align: center;
 }
 
 .home-content h1 {
+    text-align: center;
     font-family: "montserrat-medium", sans-serif;
-    font-size: 6.3rem;
+    font-size: 6.8rem;
     line-height: 1.333;
     margin-top: 0;
     color: #FFFFFF;
@@ -1806,7 +1822,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content__scroll a {
     font-family: "montserrat-semibold", sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
     color: #FFFFFF;
@@ -2703,11 +2719,12 @@ html.no-csstransitions .home-content__main {
     margin-top: 3.6rem;
     padding-bottom: 9rem;
     text-align: center;
-    position: relative;
+    /* position: relative; */
 }
 
 .clients__slide {
     display: block;
+    margin: auto;
     opacity: .55;
     padding: 1.5rem 2.8rem;
     -webkit-transition: opacity 0.5s ease-in-out;
@@ -2752,7 +2769,7 @@ html.no-csstransitions .home-content__main {
     font-family: "lora-regular", serif;
     font-size: 3rem;
     line-height: 1.8;
-    color: #555555;
+    color: rgba(255, 255, 255, 0.8);
     margin-bottom: 6rem;
 }
 

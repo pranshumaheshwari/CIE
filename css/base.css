@@ -406,6 +406,10 @@ textarea {
     margin: 0 auto;
 }
 
+.maxW {
+  max-width: none!important;
+}
+
 .row:after {
     content: "";
     display: table;
