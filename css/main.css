@@ -67,10 +67,10 @@ a:hover, a:active {
     color: black;
 }
 
-.company-logo {
+/* .company-logo {
     max-height: 15vmin;
     max-width: 25vmin;
-}
+} */
 
 .flex {
     display: flex;
@@ -2770,7 +2770,6 @@ html.no-csstransitions .home-content__main {
     font-size: 2.5rem;
     line-height: 1.8;
     font-weight: bold;
-    /* color: rgba(255, 255, 255, 0.9); */
     margin-bottom: 6rem;
 }
 

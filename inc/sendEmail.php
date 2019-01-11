@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$siteOwnersEmail = 'vbhatia@iiti.ac.in';
+$siteOwnersEmail = 'sunil.singh@iiti.ac.in';
 
 
 if($_POST) {
