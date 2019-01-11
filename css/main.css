@@ -2740,7 +2740,7 @@ html.no-csstransitions .home-content__main {
  * ## testimonials
  * ------------------------------------------------------------------- */
 .clients-testimonials {
-    margin-top: 4.2rem;
+    /* margin-top: 4.2rem; */
     padding-top: 7.2rem;
     text-align: center;
     position: relative;
@@ -2761,15 +2761,15 @@ html.no-csstransitions .home-content__main {
     transform: translateX(-50%);
 }
 
-.clients-testimonials .testimonials {
+.clients-testimonials {
     margin: 0 10%;
 }
 
-.clients-testimonials .testimonials p {
+.clients-testimonials p {
     font-family: "lora-regular", serif;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 6rem;
 }
 
@@ -2778,8 +2778,8 @@ html.no-csstransitions .home-content__main {
 }
 
 .clients-testimonials .testimonials__avatar {
-    height: 8.4rem;
-    width: 8.4rem;
+    height: 8rem;
+    width: 9rem;
     border-radius: 50%;
     margin: 0 auto 1.2rem auto;
 }
@@ -2791,15 +2791,16 @@ html.no-csstransitions .home-content__main {
 
 .clients-testimonials .testimonials__name {
     font-family: "montserrat-semibold", sans-serif;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .clients-testimonials .testimonials__pos {
     font-family: "montserrat-light", sans-serif;
     font-size: 1.4rem;
+    color: #FFFFFF;
 }
 
-.clients-testimonials .testimonials .slick-arrow {
+.clients-testimonials .slick-arrow {
     position: absolute;
     top: 7.2rem;
     width: 66px;
@@ -2820,17 +2821,17 @@ html.no-csstransitions .home-content__main {
     z-index: 2;
 }
 
-.clients-testimonials .testimonials .slick-prev {
+.clients-testimonials .slick-prev {
     left: -130px;
     background-image: url("../images/left-arrow.png");
 }
 
-.clients-testimonials .testimonials .slick-next {
+.clients-testimonials .slick-next {
     right: -130px;
     background-image: url("../images/right-arrow.png");
 }
 
-.clients-testimonials .testimonials .slick-dots {
+.clients-testimonials .slick-dots {
     margin-top: -0.6px;
 }
 
@@ -2840,22 +2841,22 @@ html.no-csstransitions .home-content__main {
  * clients
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    .clients-testimonials .testimonials {
+    .clients-testimonials {
         margin: 0 12%;
     }
-    .clients-testimonials .testimonials p {
+    .clients-testimonials p {
         font-size: 2.6rem;
     }
-    .clients-testimonials .testimonials .slick-prev {
+    .clients-testimonials .slick-prev {
         left: -100px;
     }
-    .clients-testimonials .testimonials .slick-next {
+    .clients-testimonials .slick-next {
         right: -100px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .clients-testimonials .testimonials p {
+    .clients-testimonials p {
         font-size: 2.2rem;
     }
 }
@@ -2864,17 +2865,17 @@ html.no-csstransitions .home-content__main {
     .clients-testimonials::before {
         width: 400px;
     }
-    .clients-testimonials .testimonials {
+    .clients-testimonials {
         margin: 0 2rem;
     }
-    .clients-testimonials .testimonials .slick-arrow {
+    .clients-testimonials .slick-arrow {
         top: auto;
         bottom: 3rem;
     }
-    .clients-testimonials .testimonials .slick-prev {
+    .clients-testimonials .slick-prev {
         left: 0;
     }
-    .clients-testimonials .testimonials .slick-next {
+    .clients-testimonials .slick-next {
         right: 0;
     }
 }
@@ -2886,16 +2887,16 @@ html.no-csstransitions .home-content__main {
     .clients-testimonials::before {
         width: 250px;
     }
-    .clients-testimonials .testimonials {
+    .clients-testimonials {
         margin: 0;
     }
-    .clients-testimonials .testimonials p {
+    .clients-testimonials p {
         font-size: 2rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .clients-testimonials .testimonials p {
+    .clients-testimonials p {
         font-size: 1.9rem;
     }
 }
