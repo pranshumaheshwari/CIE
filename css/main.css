@@ -67,6 +67,15 @@ a:hover, a:active {
     color: black;
 }
 
+.cell {
+    color: #39b54a;
+    font-size: 1.1em;
+}
+
+.h2 {
+    
+}
+
 /* .company-logo {
     max-height: 15vmin;
     max-width: 25vmin;
@@ -113,8 +122,14 @@ h5, .h5, h6, .h6 {
     }
 }
 
-h1, .h1 {
+h1 {
     font-size: 3.6rem;
+    line-height: 1.25;
+    letter-spacing: -.1rem;
+}
+
+.h1 {
+    font-size: 3.3rem;
     line-height: 1.25;
     letter-spacing: -.1rem;
 }
@@ -127,7 +142,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 1.3;
 }
 
