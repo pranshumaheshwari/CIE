@@ -1,0 +1,121 @@
+.fullpage {
+    width: 100vw;
+    height: 100vh;
+}
+
+.heading {
+    font-size: 5em;
+    padding-top: 18%;
+    color: #3d096e;
+}
+
+.background {
+    background-image: linear-gradient(to bottom right, #076585, white)
+}
+
+a {
+    color: black;
+}
+
+.institute:hover {
+    text-decoration: none;
+    color: black;
+    margin-left: 4px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+ .padding-top {
+     padding-top: 13%;
+ }
+
+ .background-blue {
+     background-color: rgba(200, 250, 247, 0.3)
+ }
+
+ .form-field {
+     padding: 5px;
+ }
+
+ .green {
+     color: #39b54a;
+ }
+
+ .person-icon {
+    color: #39b54a;
+    font-size: 3em;
+    position: absolute;
+    left: -55px;
+ }
+
+ .col-md-6 {
+     padding-right: 25px;
+ }
+
+ .commitee:hover {
+    color: #39b54a;
+    margin-left: 3px;
+    text-decoration: none;
+ }
+
+ .padding-zero {
+     padding: 0;
+     margin: 0;
+ }
+
+ .person-info {
+     font-size: 1.2em;
+ }
+
+ .commitee-name {
+     margin-right: 8vw;
+ }
+
+ .company-logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 75%;
+    min-width: 75%;
+ }
+ 
+ .company-logo:hover {
+     opacity: 0.7;
+ }
+
+ .companies:hover {
+     color: #39b54a;
+     text-decoration: none;
+     margin-left: 4px;
+ }
+
+ .footer:hover {
+    text-decoration: none;
+    color: #39b54a;
+}
+
+.facilities-image {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
+}
+
+.nav-item {
+    font-size: 1.2em;
+}
+
+.navbar-brand {
+    padding-left: 3%;
+}
+
+.iiti {
+    width: 100%;
+    height: 100%;
+}

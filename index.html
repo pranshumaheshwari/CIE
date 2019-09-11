@@ -20,14 +20,20 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css"> -->
 
     <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script> -->
 
     <!-- favicons
     ================================================== -->
@@ -38,84 +44,98 @@
 
 <body id="top">
 
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-        <div class="">
-            <a class="site-logo" href="http://iiti.ac.in" target="_blank">
-                <img src="images/logo.png" alt="IIT Indore" max-height="2vh" max-width="5vh">
-            </a>
-        </div>
-
-        <nav class="header-nav">
-
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
-
-            <div class="header-nav__content">
-                <h3>Navigation</h3>
-
-                <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">About Us</a></li>
-                    <li><a class="smoothscroll"  href="#commitee" title="about">Commitee</a></li>
-                    <li><a class="smoothscroll"  href="#companies" title="works">Incubated Companies</a></li>
-                    <li><a class="smoothscroll"  href="#facilities" title="services">Facilities</a></li>
-                    <li><a href="./pdf/Incubation Policy.pdf" target="_blank">Incubation Policy</a></li>
-                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
-                </ul>
-
-            </div> <!-- end header-nav__content -->
-
-        </nav>  <!-- end header-nav -->
-
-        <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-text" style="font-size: 1.8em;">Menu</span>
-            <span class="header-menu-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <h1>
+                CIE
+            </h1>
         </a>
-
-    </header> <!-- end s-header -->
+        <div class="col-md-1"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="commitee.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Commitee
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="commitee.html">Incubation Center</a>
+                        <a class="dropdown-item" href="commitee.html#sesc">SESC</a>
+                        <a class="dropdown-item" href="commitee.html#cir">CIR</a>
+                        <a class="dropdown-item" href="commitee.html#cie">CIE</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="company.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Incubated Companies
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="company.html">Swaaha Resource Management Private Limited</a>
+                        <a class="dropdown-item" href="company.html#ch">Chota Hospital</a>
+                        <a class="dropdown-item" href="company.html#epl">Esmartify Private Limited</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="facilities.html">Facilities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="__blank" href="pdf/Incubation Policy.pdf">Incubation Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <a href="http://iiti.ac.in/" target="__blank" class="">
+                <img src="images/logo.png" alt="IIT Indore" class="iiti">
+            </a>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+        </div>
+    </nav>
 
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/background-3.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section>
 
-        <div class="overlay"></div>
-        <div class="shadow-overlay"></div>
+        <div class="container-fluid fullpage background">
 
-        <div class="home-content">
+            <div class="text-center">
 
-            <div class="row home-content__main maxW">
-
-                <h1 style="padding-top: 10%;color:#01FF70;">
+                <h1 class="heading">
                     Center of Innovation & Entrepreneurship
                 </h1>
 
                 <h3>
                   <a href="http://iiti.ac.in" class="institute">IIT Indore</a>
                 </h3>
+                <br><br>
+                <div class="container">
 
-                <div class="clients-testimonials testimonials__slide">
-
-                    <p style="color: #DDDDDD;">
+                    <p class="font-weight-light" style="font-size: 1.5em;">
                       "Entrepreneurship is all about an idea that creates differentiated business value to one's customers. You must be able to convince your customers about the benefits that association with you or your products will give them. People are ready to pay if they are convinced about your services or products."
                     </p>
 
-                    <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
-                    <div class="testimonials__info">
-                        <span class="testimonials__name">N. R. Narayana Murthy</span>
-                        <span class="testimonials__pos">Co-founder, Infosys</span>
+                    <div class="font-weight-bold" style="font-size: 1.2em;">
+                        <span class="">N. R. Narayana Murthy</span><br>
+                        <span class="">Co-founder, Infosys</span>
                     </div>
-
                 </div>
-
             </div>
-
-            <div class="home-content__buttons" style="text-align: center;">
-                <a href="#contact" class="smoothscroll btn btn--stroke">
+            <br><br>
+            <div class="text-center">
+                <a href="contact.html" class="btn btn-outline-dark">
                     Contact Us
                 </a>
-                <a href="#about" class="smoothscroll btn btn--stroke">
+                <a href="#about" class="btn btn-outline-dark">
                     More About Us
                 </a>
             </div>
@@ -130,715 +150,64 @@
 
         </div> <!-- end home-content -->
 
-        <!-- end home-social -->
-
     </section> <!-- end s-home -->
 
 
     <!-- about
     ================================================== -->
-    <section id='about' class="s-about">
+    <section id="about" class="background-blue">
 
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead subhead--dark">Hello There</h3>
-                <h1 class="display-1 display-1--light">We Are The CIE</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row about-desc" data-aos="fade-up">
-            <div class="col-full">
-                <p>
-                  IIT Indore is an institute of national importance known for its R&D.
-                  The past summers of IIT Indore since its inception, has seen the Institute grow
-                  multidimensional in the fields of Engineering, Basic Sciences and Social Sciences. The
-                  focus of the Institute has always been to mould raw minds into Researchers and
-                  Innovators. The ranking of the Institute in the National Institutional Ranking Framework
-                  (NIRF), wherein it stands as the best amongst all new IITs, and the Times Higher Education World University rankings, where it is ranked 351-400, bears testimony to the fact
-                  that IIT Indore has lived up to its vision of Research and Innovation.
-                </p>
-                <p>
-                  Fortified with state-of-the-art Teaching and Research Labs, the Institute widened its
-                  vision and forayed into innovative and entrepreneurship with establishing the Centre for
-                  Innovation and Entrepreneurship (CIE) on 15th August 2016. This was done to nurture
-                  startups and accelerate the growth and success of early stage startups through an array
-                  of business support, financial and technical services. These include seed capital,
-                  physical space, coaching, common legal, administrative &amp; financial services and
-                  networking connections. CIE help the entrepreneurs in their most crucial initial phases
-                  of their entrepreneurial journey.
-                </p>
-            </div>
-        </div> <!-- end about-desc -->
-
-        <div class="about__line"></div>
-
-        <!-- <div class="row clients-testimonials" data-aos="fade-up">
-            <div class="col-full">
-                <div class="testimonials">
-
-                    <div class="testimonials__slide">
-
-                        <p>
-                          Entrepreneurship is all about an idea that creates differentiated business value to one's customers. You must be able to convince your customers about the benefits that association with you or your products will give them. People are ready to pay if they are convinced about your services or products.
-                        </p>
-
-                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
-                        <div class="testimonials__info">
-                            <span class="testimonials__name">N. R. Narayana Murthy</span>
-                            <span class="testimonials__pos">Co-founder, Infosys</span>
-                        </div>
-
-                    </div>
-
-                    <div class="testimonials__slide">
-
-                        <p>
-                          Innovation distinguishes between a leader and a follower.
-                        </p>
-
-                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
-                        <div class="testimonials__info">
-                            <span class="testimonials__name">Steve Jobs</span>
-                            <span class="testimonials__pos">Co-founder, Apple Inc.</span>
-                        </div>
-
-                    </div>
-
-                    <div class="testimonials__slide">
-
-                        <p>Innovation is fostered by information gathered from new connections; from insights gained by journeys into other disciplines or places; from active, collegial networks and fluid, open boundaries. Innovation arises from ongoing circles of exchange, where information is not just accumulated or stored, but created. Knowledge is generated anew from connections that weren’t there before.</p>
-
-                        <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonials__avatar">
-                        <div class="testimonials__info">
-                            <span class="testimonials__name">Meg Wheatley</span>
-                            <span class="testimonials__pos">American writer</span>
-                        </div>
-
-                    </div>
-
+        <div class="container fullpage">
+            <div class="text-center">
+                <div class="padding-top">
+                    <h1 class="">About CIE, IITI</h1>
                 </div>
-
             </div>
-        </div> -->
 
-    </section> <!-- end s-about -->
-
-
-    <!-- services
-    ================================================== -->
-    <section id='commitee' class="s-services">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Who Are We</h3>
-                <h1 class="display-2">Meet The Team</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <h2 class="h1" style="text-align: center;">Governing Council of IIT Indore <span class="cell">Incubation Center</span></h2>
-
-        <div class="row services-list block-1-2 block-tab-full">
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a href="https://en.wikipedia.org/wiki/Pradeep_Mathur_(scientist)" target="_blank" class="commitee">Prof. Pradeep Mathur-Chairperson </a></h3>
-                    <p>
-                        Founder Director of IITI, Prof. Pradeep Mathur is an Indian organometallic and cluster chemist. He is a former professor of the Indian Institute of Technology, Mumbai and is locally known for his studies on mixed metal cluster compounds. He is an elected fellow of the Indian Academy of Sciences The Council of Scientific and Industrial Research, the apex agency of the Government of India for scientific research, awarded him the Shanti Swarup Bhatnagar Prize for Science and Technology, one of the highest Indian science awards, in 2000, for his contributions to chemical sciences.
+            <br><br><br>
+    
+            <div class="text-justify">
+                <div class="">
+                    <p class="font-weight-light" style="font-size: 1.5em;">
+                      IIT Indore is an institute of national importance known for its R&D.
+                      The past summers of IIT Indore since its inception, has seen the Institute grow
+                      multidimensional in the fields of Engineering, Basic Sciences and Social Sciences. The
+                      focus of the Institute has always been to mould raw minds into Researchers and
+                      Innovators. The ranking of the Institute in the National Institutional Ranking Framework
+                      (NIRF), wherein it stands as the best amongst all new IITs, and the Times Higher Education World University rankings, where it is ranked 351-400, bears testimony to the fact
+                      that IIT Indore has lived up to its vision of Research and Innovation.
+                    </p>
+                    <br>
+                    <p class="font-weight-light" style="font-size: 1.5em;">
+                      Fortified with state-of-the-art Teaching and Research Labs, the Institute widened its
+                      vision and forayed into innovative and entrepreneurship with establishing the Centre for
+                      Innovation and Entrepreneurship (CIE) on 15th August 2016. This was done to nurture
+                      startups and accelerate the growth and success of early stage startups through an array
+                      of business support, financial and technical services. These include seed capital,
+                      physical space, coaching, common legal, administrative &amp; financial services and
+                      networking connections. CIE help the entrepreneurs in their most crucial initial phases
+                      of their entrepreneurial journey.
                     </p>
                 </div>
-            </div>
-            
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a href="https://asonawane.wixsite.com/iitibsbe" target="_blank" class="commitee">Dr. Avinash Sonawane</a></h3>
-                    <p>
-                        Convener of CIE, Dr. Avinash is an Professor at the Discipline of Biosciences and Biomedical Engineering at Indian Institute of Technology Indore. His research interests include Role of Mycobacterium tuberculosis glycoproteins and glycolipoproteins in modulation of host immune responses and Development of L-asparaginase based therapy for the treatment of primary and relapse acute lymphatic leukemia.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a href="http://www.iiti.ac.in/people/~bvaidya/" target="_blank" class="commitee">Dr. Bhargav Vaidya</a></h3>
-                    <p>
-                        He is an Assistant Professor at the Disciple of Astronomy, Astrophysics and Space Engineering at Indian Institute of Technology Indore. He is interested to study Astrophysical plasma flows using numerical simulations. In particular, his research interests include study of astrophysical jets from young stars and Active Galactic Nuclei (AGN), accretion disks, interaction of shocks in Astrophysical environments. His main focus has been to bridge the gaps between numerical simulations of Astrophysical plasma flows with their multi-wavelength observational signatures.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a href="http://bsbe.iiti.ac.in/faculty.php" target="_blank" class="commitee">Dr. Hem Chandra Jha</a></h3>
-                    <p>
-                        Head of Discipline of BSBE, IIT Indore, Dr. Jha has research interests in Host-pathogen interaction- Epstein-Barr virus and Helicobacter pylori associated co-infection in cancer progression and Pathogens burden during viral infection of Gastric Cancer, Head and Neck Cancer and Multiple Sclerosis.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a href="https://www.linkedin.com/in/rubysmalhotra/?originalSubdomain=in" target="_blank" class="commitee">Ruby S. Malhotra (External Member)</a></h3>
-                    <p>
-                        Executive Director, Kailtech Test & Research Pvt. Ltd.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a target="_blank" class="commitee">Mr. Dinesh Khare (External Member)</a></h3>
-                    <p>
-                        Regional Coordinator, CED
-                    </p>
-                </div>
-            </div>
-
+            </div> <!-- end about-desc -->
         </div>
 
-        <h2 class="h1" style="text-align: center;">Commitee Members of <span class="cell">Student Entreprenership Support Cell (SESC)</span></h2>
 
-        <div class="row services-list block-1-2 block-tab-full">
+    </section>
 
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a href="https://sites.google.com/site/drhborkar/home" target="_blank" class="commitee">Dr. Hemant Borkar</a></h3>
-                    <p>
-                      Dr. Borkar convener of SESC currently working as Assistant Professor at Indian Institute of Technology (IIT) Indore in Metallurgy Engineering and Materials Science department.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a href="http://people.iiti.ac.in/~meiiti/index.php/dr-subbareddy-daggumati/" target="_blank" class="commitee">Dr. Subba Reddy Daggumati</a></h3>
-                    <p>
-                      Dr. Daggumati member of SESC currently working as Assistant Professor at Indian Institute of Technology (IIT) Indore in Mechanical Engineering department.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a href="https://sites.google.com/site/lalitborana/" target="_blank" class="commitee">Dr. Lalit Borana</a></h3>
-                    <p>
-                      Dr. Borana member of SESC currently working as Assistant Professor at Indian Institute of Technology (IIT) Indore in Civil Engineering department.
-                    </p>
-                </div>
-            </div>
-
+    <footer class="background-blue">
+        <br><br><br>
+        <div class="footer-copyright text-center py-3">
+            Made with 
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            by 
+            <a href="http://github.com/pranshumaheshwari" class="footer" target="__blank">Pranshu Maheshwari</a>
         </div>
-
-        <!-- <h2 class="h1" style="text-align: center;">Commitee Members of <span class="cell">Innovation Enterprenership Development Center (IEDC)</span></h2>
-
-        <div class="row services-list block-1-2 block-tab-full">
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a href="https://asonawane.wixsite.com/iitibsbe" target="_blank" class="commitee">Dr. Avinash Sonawane</a></h3>
-                    <p>
-                        Convener of CIE, Dr. Avinash is an Professor at the Discipline of Biosciences and Biomedical Engineering at Indian Institute of Technology Indore. His research interests include Role of Mycobacterium tuberculosis glycoproteins and glycolipoproteins in modulation of host immune responses and Development of L-asparaginase based therapy for the treatment of primary and relapse acute lymphatic leukemia.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a href="http://people.iiti.ac.in/~bklad/" target="_blank" class="commitee">Dr. Bhupesh Lad</a></h3>
-                    <p>
-                        Dr. Bhupesh Kumar Lad is an Associate Professor in Discipline of Mechanical Engineering at the Indian Institute of Technology Indore, India. He received the Ph.D. degree in the area of Reliability Engineering from the Department of Mechanical Engineering at the Indian Institute of Technology Delhi, India, in 2010.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a href="http://bsbe.iiti.ac.in/faculty.php" target="_blank" class="commitee">Dr. Hem Chandra Jha</a></h3>
-                    <p>
-                      Head of Discipline of BSBE, IIT Indore, Dr. Jha has research interests in Host-pathogen interaction- Epstein-Barr virus and Helicobacter pylori associated co-infection in cancer progression and Pathogens burden during viral infection of Gastric Cancer, Head and Neck Cancer and Multiple Sclerosis.
-                    </p>
-                </div>
-              </div>
-
-        </div> -->
-
-        <h2 class="h1" style="text-align: center;">Commitee Members of <span class="cell">Center for Industry Realtions (CIR)</span></h2>
-
-        <div class="row services-list block-1-2 block-tab-full">
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a href="https://sites.google.com/view/mkg1/home" target="_blank" class="commitee">Dr. Manish Kumar Goyal</a></h3>
-                    <p>
-                      Convener of Center for Industry Relations and Faculty in the Discipline of Civil Engineering, IIT Indore, Dr. Goyal received Best Theoretical-Oriented Paper Award in American Society of Civil Engineers (ASCE) 2018. Awarded American Society of Civil Engineers (ASCE’s)- Visiting International Fellowship 2019.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a href="http://anirban-sengupta.com/" target="_blank" class="commitee">Dr. Anirban Sengupta</a></h3>
-                    <p>
-                        Dr. Sengupta member of CIR currently working as Assistant Professor at Indian Institute of Technology (IIT) Indore in Computer Science and Engineering department.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a target="_blank" class="commitee">Dr. Parimal Kar</a></h3>
-                    <p>
-                        Dr. Kar member of CIR currently working as Assistant Professor at Indian Institute of Technology (IIT) Indore in Biosciences and Biomedical Engineering department.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-        <h2 class="h1" style="text-align: center;">Commitee Members of <span class="cell">Center of Innovation & Entrepreneurship (CIE)</span></h2>
-
-        <div class="row services-list block-1-2 block-tab-full">
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2"><a href="https://asonawane.wixsite.com/iitibsbe" target="_blank" class="commitee">Dr. Avinash Sonawane</a></h3>
-                    <p>
-                        Convener of CIE, Dr. Avinash is an Professor at the Discipline of Biosciences and Biomedical Engineering at Indian Institute of Technology Indore. His research interests include Role of Mycobacterium tuberculosis glycoproteins and glycolipoproteins in modulation of host immune responses and Development of L-asparaginase based therapy for the treatment of primary and relapse acute lymphatic leukemia.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-              <div class="service-icon">
-                  <i class="fa fa-user"></i>
-              </div>
-              <div class="service-text">
-                  <h3 class="h2"><a href="http://bsbe.iiti.ac.in/faculty.php" target="_blank" class="commitee">Dr. Hem Chandra Jha</a></h3>
-                  <p>
-                    Head of Discipline of BSBE, IIT Indore, Dr. Jha has research interests in Host-pathogen interaction- Epstein-Barr virus and Helicobacter pylori associated co-infection in cancer progression and Pathogens burden during viral infection of Gastric Cancer, Head and Neck Cancer and Multiple Sclerosis.
-                  </p>
-              </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-              <div class="service-icon">
-                  <i class="fa fa-user"></i>
-              </div>
-              <div class="service-text">
-                  <h3 class="h2"><a href="https://sites.google.com/view/mkg1/home" target="_blank" class="commitee">Dr. Manish Kumar Goyal</a></h3>
-                  <p>
-                    Convener of Center for Industry Relations and Faculty in the Discipline of Civil Engineering, IIT Indore, Dr. Goyal received Best Theoretical-Oriented Paper Award in American Society of Civil Engineers (ASCE) 2018. Awarded American Society of Civil Engineers (ASCE’s)- Visiting International Fellowship 2019.
-                  </p>
-              </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-              <div class="service-icon">
-                  <i class="fa fa-user"></i>
-              </div>
-              <div class="service-text">
-                  <h3 class="h2"><a href="https://sites.google.com/site/drhborkar/home" target="_blank" class="commitee">Dr. Hemant Borkar</a></h3>
-                  <p>
-                    Convener of Student Entrepreneurship Support Cell and Faculty in the Discipline of Metallurgy Engineering and Materials Science, IIT Indore, Dr. Borkar has a PhD degree in Materials Engineering from McGill University, Canada.
-                  </p>
-              </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-              <div class="service-icon">
-                  <i class="fa fa-user"></i>
-              </div>
-              <div class="service-text">
-                  <h3 class="h2"><a href="https://in.linkedin.com/in/cdr-sunil-kumar-retd-11a23314" target="_blank" class="commitee">Cdr. Sunil Kumar (Retd.)</a></h3>
-                  <p>
-                    Deputy Registrar, Centre of Innovation and Entrepreneurship, IIT Indore
-                  </p>
-              </div>
-            </div>
-
-        </div>   <!-- end services-list -->
-
-    </section> <!-- end s-services -->
-
-    <!-- clients
-    ================================================== -->
-    <section id="companies" class="s-clients">
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Incubated Companies</h3>
-                <h1 class="display-2">CIE has been honored to help these companies</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <!-- <div class="row clients-outer" data-aos="fade-up">
-            <div class="col-full">
-                <div class="clients">
-                    <a href="http://www.swaaha.in/" target="_blank" title="" class="clients__slide"><img src="images/clients/swaaha.png" /></a>
-                    <a href="https://www.chotahospital.in/" title="" class="clients__slide" target="_blank"><img src="images/clients/chota-hospital.png" /></a>
-                    <a href="https://esmartify.com/" title="" class="clients__slide" target="_blank"><img src="images/clients/e-smartify.png" /></a>
-                </div> 
-            </div> 
-        </div> -->
-
-        <div class="clients-outer" data-aos="fade-up">
-            <div class="row" style="border: 2px solid black;">
-                <div class="col-four">
-                    <a href="http://www.swaaha.in/" target="_blank" title="" class="clients__slide" style="padding-top: 50%;"><img src="images/clients/swaaha.png" class="company-logo" /></a>
-                </div>
-                <div class="col-eight">
-                    <h3 class="h2"><a href="http://www.swaaha.in/" target="_blank" title="" class="companies">Swaaha Resource Management Private Limited</a></h3>
-                    <div class="col-full">
-                        <p>
-                            The name Swaaha is taken from initials of words Swachh (Clean) and Hara (Green), which
-                            are two fundamental tenets of proper waste management. Swaaha also means a pious
-                            sacrifice, which fosters our third and final aim of eradicating poverty by economically
-                            empowering the people involved in this sector. Presently operational in Indore City in
-                            the state of Madhya Pradesh, Swaaha has grown exponentially within 20 months of its
-                            incorporation. Swaaha specializes in designing solutions and products for composting
-                            (organic waste processing). With a current installed processing capacity of 6000 kg/day,
-                            Swaaha works with some of the best and prestigious institutions and organizations of
-                            Indore including Indian Institute of Technology Indore, Indian Institute of Management
-                            Indore, Indore Municipal Corporation, 56 Dukaan Trade Association, Sayaji Group of
-                            Hotels, Brilliant Convention Centre and Narsee Monji Institute of Management Studies
-                            Indore.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="clients-outer" data-aos="fade-up">
-            <div class="row" style="border: 2px solid black;">
-                <div class="col-four">
-                    <a href="https://www.chotahospital.in/" title="" class="clients__slide" target="_blank"><img src="images/clients/chota-hospital.png" class="company-logo" /></a>
-                </div>
-                <div class="col-eight">
-                    <h3 class="h2"><a href="https://www.chotahospital.in/" title="" class="companies" target="_blank">Chota Hospital</a></h3>
-                    <p>
-                        After completing their graduation in 2016, Mr. Anmol Arora and Mr. Vikram launched their first SaaS product - DocVita. What is DocVita? Having the doctor connected virtually, and actively encouraging recovery can make a profound impact in making a patient’s healthcare journey frictionless, DocVita is a smartphone app that facilitates this interaction. With DocVita, their aim is to enable care that transcends all boundaries, and empowers people with more information and control over their health. It leverages on AI & Machine Learning to automate patient communications, inspiring & motivating them for better health outcomes.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="clients-outer" data-aos="fade-up">
-            <div class="row" style="border: 2px solid black;">
-                <div class="col-four">
-                        <a href="https://esmartify.com/" title="" class="clients__slide" target="_blank" style="padding-top: 25%;"><img src="images/clients/e-smartify.png" class="company-logo" /></a>
-                </div>
-                <div class="col-eight">
-                    <h3 class="h2"><a href="https://esmartify.com/" title="" class="companies" target="_blank">Esmartify Private Limited</a></h3>
-                    <p>
-                        Esmartify provides location-based information to its users via a
-                        mobile app, both outdoor and indoor, using various proximity technologies including
-                        GPS and Beacons. Users can get local shopping offers when they visit a mall, menu
-                        cards and ratings when they are near a restaurant. They can also get information about
-                        animals when they are near them in a Zoo, about Paintings/Artefacts when they are
-                        near them in a Museum. Esmartify made Kamla Nehru Prani Sangrahalaya - Indore
-                        Zoo, the First Smart Zoo of India. They are currently testing their solutions in malls and
-                        retail.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </section> <!-- end s-clients -->
-
-    <!-- works
-    ================================================== -->
-    <section id='facilities' class="s-works">
-
-        <div class="intro-wrap">
-
-            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
-                <div class="col-full">
-                    <h3 class="subhead">Facilities</h3>
-                    <h1 class="display-2 display-2--light">Check out picks for our place.</h1>
-                </div>
-            </div> <!-- end section-header -->
-
-        </div> <!-- end intro-wrap -->
-
-        <div class="row works-content">
-            <div class="col-full masonry-wrap">
-                <div class="masonry">
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb p-0">
-                                <a href="images/facilities/Conference Hall -1.jpeg" class="thumb-link" title="Conference Hall" data-size="1050x700">
-                                    <img src="images/facilities/Conference Hall -1.jpeg" srcset="images/facilities/Conference Hall -1.jpeg 1x, images/facilities/Conference Hall -1.jpeg 2x" alt="Conference Hall -2.jpeg">
-                                </a>
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Conference Hall
-                                </h3>
-                            </div>
-
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb p-0">
-                                <a href="images/facilities/Cubicle - 1 seater 1.jpeg" class="thumb-link" title="Cubicle" data-size="1050x700">
-                                    <img src="images/facilities/Cubicle - 1 seater 1.jpeg" srcset="images/facilities/Cubicle - 1 seater 1.jpeg 1x, images/facilities/Cubicle - 1 seater 1.jpeg 2x" alt="Cubicle - 1 seater 2.jpeg">
-                                </a>
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Cubicle
-                                </h3>
-                            </div>
-
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb p-0">
-                                <a href="images/facilities/Sitting Lounge -3.jpeg" class="thumb-link" title="Sitting Lounge" data-size="1050x700">
-                                    <img src="images/facilities/Sitting Lounge -3.jpeg" srcset="images/facilities/Sitting Lounge -3.jpeg 1x, images/facilities/Sitting Lounge -3.jpeg 2x" alt="Sitting Lounge -4.jpeg">
-                                </a>
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Sitting Lounge
-                                </h3>
-                            </div>
-
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb p-0">
-                                <a href="images/facilities/Cubicle - 4 seater 1.jpeg" class="thumb-link" title="Cubicle" data-size="1050x700">
-                                    <img src="images/facilities/Cubicle - 4 seater 1.jpeg" srcset="images/facilities/Cubicle - 4 seater 1.jpeg 1x, images/facilities/Cubicle - 4 seater 1.jpeg 2x" alt="Cubicle - 4 seater 2.jpeg">
-                                </a>
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Cubicle
-                                </h3>
-                            </div>
-
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb p-0">
-                                <a href="images/facilities/Corridor.jpeg" class="thumb-link" title="Corridor" data-size="1050x700">
-                                    <img src="images/facilities/Corridor.jpeg" srcset="images/facilities/Corridor.jpeg 1x, images/facilities/Corridor.jpeg 2x" alt="Corridor.jpeg">
-                                </a>
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Corridor
-                                </h3>
-                            </div>
-
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb p-0">
-                                <a href="images/facilities/Sitting Lounge.jpeg" class="thumb-link" title="Sitting Lounge" data-size="1050x700">
-                                    <img src="images/facilities/Sitting Lounge.jpeg" srcset="images/facilities/Sitting Lounge.jpeg 1x, images/facilities/Sitting Lounge.jpeg 2x" alt="Sitting Lounge -1.jpeg">
-                                </a>
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Sitting Lounge
-                                </h3>
-                            </div>
-
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-
-                </div> <!-- end masonry -->
-            </div> <!-- end col-full -->
-        </div> <!-- end works-content -->
-
-    </section> <!-- end s-works -->
-
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact">
-
-        <div class="overlay"></div>
-        <div class="contact__line"></div>
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Contact Us</h3>
-                <h1 class="display-2 display-2--light">Reach out to us</h1>
-            </div>
-        </div>
-
-        <div class="row contact-content" data-aos="fade-up">
-
-            <div class="contact-primary">
-
-                <h3 class="h6">Send Us A Message</h3>
-
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
-                    <fieldset>
-
-                    <div class="form-field">
-                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
-                    </div>
-                    <div class="form-field">
-                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
-                    </div>
-                    <div class="form-field">
-                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
-                    </div>
-                    <div class="form-field">
-                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
-                    </div>
-                    <div class="form-field">
-                        <button class="full-width btn--primary">Submit</button>
-                        <div class="submit-loader">
-                            <div class="text-loader">Sending...</div>
-                            <div class="s-loader">
-                                <div class="bounce1"></div>
-                                <div class="bounce2"></div>
-                                <div class="bounce3"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    </fieldset>
-                </form>
-
-                <!-- contact-warning -->
-                <div class="message-warning">
-                    Something went wrong. Please try again.
-                </div>
-
-                <!-- contact-success -->
-                <div class="message-success">
-                    Your message was sent, thank you!<br>
-                </div>
-
-            </div> <!-- end contact-primary -->
-
-            <div class="contact-secondary">
-                <div class="contact-info">
-
-                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
-
-                    <div class="cinfo">
-                        <h5>Where to Find Us</h5>
-                        <p>
-                            301, Manganese <br>
-                            IIT Indore
-                        </p>
-                    </div>
-
-                    <div class="cinfo">
-                        <h5>Email Us At</h5>
-                        <p>
-                          sunil.singh@iiti.ac.in
-                        </p>
-                    </div>
-
-                    <div class="cinfo">
-                        <h5>Call Us At</h5>
-                        <p>
-                          07324306841
-                        </p>
-                    </div>
-
-                    <ul class="contact-social">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                    </ul> <!-- end contact-social -->
-
-                </div> <!-- end contact-info -->
-            </div> <!-- end contact-secondary -->
-
-        </div> <!-- end contact-content -->
-
-    </section> <!-- end s-contact -->
-
+    </footer>
 
     <!-- footer
     ================================================== -->
-    <footer>
+    <!-- <footer>
 
         <div class="row footer-bottom">
 
@@ -850,56 +219,16 @@
                 <div class="go-top">
                     <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
                 </div>
-            </div>
+            </div> -->
 
-        </div> <!-- end footer-bottom -->
+        <!-- </div> end footer-bottom -->
 
-    </footer> <!-- end footer -->
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div> <!-- end photoSwipe background -->
+    <!-- </footer> end footer -->
 
 
     <!-- preloader
     ================================================== -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div id="loader">
             <div class="line-scale-pulse-out">
                 <div></div>
@@ -909,14 +238,14 @@
                 <div></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+    <!-- <script src="js/plugins.js"></script> -->
+    <!-- <script src="js/main.js"></script> -->
 
 </body>
 

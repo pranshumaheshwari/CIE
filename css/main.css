@@ -42,6 +42,10 @@ a:hover, a:active {
     outline: 0;
 }
 
+h1 {
+    text-align: center;
+    position: relative;
+}
 
 .institute {
   color: white;
@@ -72,8 +76,20 @@ a:hover, a:active {
     font-size: 1.1em;
 }
 
-.h2 {
-    
+.site-logo {
+    position: absolute;
+    left: 3%;
+    color: white;
+}
+
+.black-background {
+    position: absolute
+    background: #000000;
+}
+
+.iit-logo {
+    position: absolute;
+    right: 20px;
 }
 
 /* .company-logo {
@@ -1641,10 +1657,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     color: #39b54a;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    display: none;
 }
 
 .header-menu-toggle.opaque {
     background-color: #000000;
+    display: block;
 }
 
 .header-menu-toggle.opaque .header-menu-text {
